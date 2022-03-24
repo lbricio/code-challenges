@@ -15,16 +15,40 @@ int main()
 	return (0);
 }
 
-	/* useful for debug
-    std::cout << std::fixed << std::setprecision(10);
-	std::cout << x_size << " " << y_size << std::endl;
-	std::cout << std::defaultfloat; */
+// problem: https://codeforces.com/problemset/problem/1/A
 
-/* a better solution:
-#include <bits/stdc++.h> 
-using namespace std; 
-int main(){ 
-    double n, m, a; 
-    cin >> n >> m >> a; 
-    cout << (long long) ceil(n/a)* (long long) ceil(m/a) << endl; 
-} */
+	/* 
+		//useful for debug
+
+		std::cout << std::fixed << std::setprecision(10);
+		std::cout << x_size << " " << y_size << std::endl;
+		std::cout << std::defaultfloat;
+	*/
+
+
+	/*
+		//other solution
+
+		#include <bits/stdc++.h> 
+
+		int main(){ 
+			double n, m, a; 
+			std::cin >> n >> m >> a; 
+			std::cout << (long long) std::ceil(n/a)* (long long) std::ceil(m/a) << std::endl; 
+		}
+	*/
+
+	/*
+		//other solution
+
+		#include <iostream>
+
+		int main()
+		{
+			long long n, m, a;
+			std::cin >> n >> m >> a;
+
+			std::cout << ((n + a - 1)/ a) * ((m + a - 1)/ a) << std::endl;
+		}
+	*/
+

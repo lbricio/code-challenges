@@ -20,3 +20,5 @@ int main()
 
     return(0);
 }
+
+// problem: https://codeforces.com/problemset/problem/266/A
