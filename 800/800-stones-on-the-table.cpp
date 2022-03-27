@@ -1,3 +1,7 @@
+/*
+**    problem: https://codeforces.com/problemset/problem/266/A
+*/
+
 # include <iostream>
 using namespace std;
 
@@ -20,5 +24,3 @@ int main()
 
     return(0);
 }
-
-// problem: https://codeforces.com/problemset/problem/266/A

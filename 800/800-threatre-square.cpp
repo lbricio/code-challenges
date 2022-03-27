@@ -1,3 +1,7 @@
+/*
+** problem: https://codeforces.com/problemset/problem/1/A
+*/
+
 # include <iostream>
 # include <cmath>
 # include <iomanip>
@@ -15,40 +19,32 @@ int main()
 	return (0);
 }
 
-// problem: https://codeforces.com/problemset/problem/1/A
+/*
+	// useful for debug
+	std::cout << std::fixed << std::setprecision(10);
+	std::cout << x_size << " " << y_size << std::endl;
+	std::cout << std::defaultfloat;
+*/
 
-	/* 
-		//useful for debug
+/*
+	//other solution:
+	#include <bits/stdc++.h> 
+	int main()
+	{ 
+		double n, m, a; 
+		std::cin >> n >> m >> a; 
+		std::cout << (long long) std::ceil(n/a)* (long long) std::ceil(m/a) << std::endl; 
+	}
+*/
 
-		std::cout << std::fixed << std::setprecision(10);
-		std::cout << x_size << " " << y_size << std::endl;
-		std::cout << std::defaultfloat;
-	*/
-
-
-	/*
-		//other solution
-
-		#include <bits/stdc++.h> 
-
-		int main(){ 
-			double n, m, a; 
-			std::cin >> n >> m >> a; 
-			std::cout << (long long) std::ceil(n/a)* (long long) std::ceil(m/a) << std::endl; 
-		}
-	*/
-
-	/*
-		//other solution
-
-		#include <iostream>
-
-		int main()
-		{
-			long long n, m, a;
-			std::cin >> n >> m >> a;
-
-			std::cout << ((n + a - 1)/ a) * ((m + a - 1)/ a) << std::endl;
-		}
-	*/
+/*
+	//other solution:
+	#include <iostream>
+	int main()
+	{
+		long long n, m, a;
+		std::cin >> n >> m >> a;
+		std::cout << ((n + a - 1)/ a) * ((m + a - 1)/ a) << std::endl;
+	}
+*/
 
