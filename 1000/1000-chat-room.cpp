@@ -9,7 +9,7 @@ int main ()
 	cin >> s;
 
 	int i = 0, l = 0;
-	while (s[i] != 0)
+	while (1)
 	{
 		while (s[i] != 'h' && s[i] != '\0')
 			i++;
