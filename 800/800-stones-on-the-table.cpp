@@ -1,5 +1,5 @@
 /*
-**    problem: https://codeforces.com/problemset/problem/266/A
+** problem: https://codeforces.com/problemset/problem/266/A
 */
 
 # include <iostream>
