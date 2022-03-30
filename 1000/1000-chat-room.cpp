@@ -48,10 +48,10 @@ int main ()
 		while (s[i] != 'o' && s[i] != '\0')
 			i++;
 		if (s[i] == 'o' && l >= 2)
-			{
-				cout << "YES" << endl;
-				return (0);
-			}
+		{
+			cout << "YES" << endl;
+			return (0);
+		}
 		else if (s[i] == '\0')
 			break;
 	}
