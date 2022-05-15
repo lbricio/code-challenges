@@ -19,7 +19,7 @@ public:
                 vec.push_back("Buzz");
             else
             {
-                s = std::to_string(i);
+                s = to_string(i);
                 vec.push_back(s);
             }
             i++;
