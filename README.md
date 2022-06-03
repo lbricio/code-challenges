@@ -2,7 +2,7 @@
 rated problems solved from leetcode
 
 
-## my most recent highlight:
+## my latest favorite solution:
 ![image](https://user-images.githubusercontent.com/81334995/171769144-1a0c278f-a426-4c2a-be89-e0ee4208d8d4.png)
 
 ``` cpp
