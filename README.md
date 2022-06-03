@@ -39,7 +39,8 @@ public:
             for (int j = 0; j < grid[0].size(); j++) {
                 if (grid[i][j] == 1)
                 {
-                    // when find a occuped square, call the bomberman function to count and clear                         // that square and search for nearest ones
+                    // when find a occuped square, call the bomberman function to count and clear                         
+                    // that square and search for nearest ones
                     bomberman(grid, i, j, &area);
                     if (area > biggest_area)
                         biggest_area = area;
