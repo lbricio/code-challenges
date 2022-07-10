@@ -9,8 +9,7 @@ int main ()
 	cin >> s;
 
 	int i = 0, l = 0;
-	while (1)
-	{
+	while (1) {
 		while (s[i] != 'h' && s[i] != '\0')
 			i++;
 		if (s[i] == 'h')
@@ -27,8 +26,7 @@ int main ()
 
 		while (s[i] != 'l' && s[i] != '\0')
 			i++;
-		if (s[i] == 'l')
-		{
+		if (s[i] == 'l') {
 			i++;
 			l++;
 		}
@@ -36,19 +34,16 @@ int main ()
 			break;
 		while (s[i] != 'l' && s[i] != '\0' && s[i] != 'o')
 			i++;
-		if (s[i] == 'l')
-		{
+		if (s[i] == 'l') {
 			i++;
 			l++;
 		}
 		if (s[i] == '\0')
 			break;
 
-
 		while (s[i] != 'o' && s[i] != '\0')
 			i++;
-		if (s[i] == 'o' && l >= 2)
-		{
+		if (s[i] == 'o' && l >= 2) {
 			cout << "YES" << endl;
 			return (0);
 		}
