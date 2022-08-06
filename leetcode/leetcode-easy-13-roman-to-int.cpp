@@ -7,20 +7,13 @@ using namespace std;
 
 int romanCharToInt(char R)
 {
-    if (R == 'M')
-        return 1000;
-    else if (R == 'D')
-        return 500;
-    else if (R == 'C')
-        return 100;
-    else if (R == 'L')
-        return 50;
-    else if (R == 'X')
-        return 10;
-    else if (R == 'V')
-        return 5;
-    else if (R == 'I')
-        return 1;
+         if (R == 'M') return 1000;
+    else if (R == 'D') return 500;
+    else if (R == 'C') return 100;
+    else if (R == 'L') return 50;
+    else if (R == 'X') return 10;
+    else if (R == 'V') return 5;
+    else if (R == 'I') return 1;
     return 0;
 }
 
