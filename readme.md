@@ -4,16 +4,16 @@
 ``` cpp
 // algorithm to get largest island, my solution is based on use of recursion
 
-#define LAND_FOUND 1
+#define LAND_FOUND   1
 #define LAND_COUNTED 0
+#define RESET        0
 
 void watcher(vector<vector<int>>& grid, int i, int j, int *area)
 {
-    // unmark current square
     grid[i][j] = LAND_COUNTED; 
     *area += 1;
 
-    // look up all 4 sides and create new watchers
+    // look up all 4 sides and create new watchers if found terrain
     if (j > 0)
         if (grid[i][j - 1] == LAND_FOUND)
             watcher(grid, i, j - 1, area);
@@ -37,14 +37,14 @@ public:
         
         for (int i = 0; i < grid.size(); i++) {
             for (int j = 0; j < grid[0].size(); j++) {
-                if (grid[i][j] == 1)
+                if (grid[i][j] == LAND_FOUND)
                 {
-                    // when find a occuped square, call the watcher function to count and clear
-                    // that square and search for nearest ones
+                    // when find a occuped square, call the watcher function to count it
+                    // after counted, put new watchers on near lands
                     watcher(grid, i, j, &area);
                     if (area > largest_area)
                         largest_area = area;
-                    area = 0; // reset actual area count to measure the next island
+                    area = RESET;
                 }
             }
         }
