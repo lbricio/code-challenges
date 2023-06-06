@@ -39,7 +39,7 @@ public:
             for (int j = 0; j < grid[0].size(); j++) {
                 if (grid[i][j] == LAND_FOUND)
                 {
-                    // when find a occuped square, call the watcher function to count it
+                    // when find a terrain, call the watcher function to count it
                     // after counted, put new watchers on near lands
                     watcher(grid, i, j, &area);
                     if (area > largest_area)
